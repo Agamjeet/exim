@@ -24,12 +24,12 @@ const ServicesSection = () => {
       description: "Dedicated rail rakes + last-mile trucking from ports to steel plants (e.g., JSW) for on-time delivery.",
       image: "/train.jpg"
     },
-    {
-      icon: "🌍",
-      title: "Trade & Exports",
-      description: "End-to-end export solutions for dry bulk cargo including minerals, agricultural products, and fertilizers to global markets.",
-      image: "/5.jpg"
-    }
+    // {
+    //   icon: "🌍",
+    //   title: "Trade & Exports",
+    //   description: "End-to-end export solutions for dry bulk cargo including minerals, agricultural products, and fertilizers to global markets.",
+    //   image: "/5.jpg"
+    // }
   ];
 
   return (

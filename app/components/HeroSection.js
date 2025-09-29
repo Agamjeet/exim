@@ -10,7 +10,7 @@ const HeroSection = () => {
       {/* Background Image with Blue Gradient */}
       <div className="absolute inset-0">
         <img
-          src="/ship.png"
+          src="/ship2.png"
           alt="Port Operations"
           className="w-full h-full object-cover"
         />
@@ -18,26 +18,15 @@ const HeroSection = () => {
       </div>
       
       {/* Content */}
-      <div className="hero-content text-center relative z-10">
+      <div className="hero-content text-center relative z-10" style={{ marginTop: '-8vw' }}>
         <div className="max-w-4xl">
-          {/* Logo behind text */}
-          <div className="relative mb-6">
-            <img
-              src="/globe-photoroom.png"
-              alt="BlueMarg Global Logo"
-              className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-3/4 w-64 h-64 md:w-80 md:h-80 opacity-100"
-            />
-            <h1 className="text-5xl md:text-7xl font-bold text-white relative z-10">
-              BlueMarg Global
-            </h1>
-          </div>
-          <h2 className="text-2xl md:text-4xl font-semibold mb-4 text-white">
-            Smarter International Logistic Solutions for a connected world
+          <h1 className="text-5xl md:text-7xl font-bold text-white mb-5">
+            BlueMarg Global
+          </h1>
+          <h2 className="text-lg md:text-3xl font-semibold text-white" style={{ marginBottom: '15vw' }}>
+          "Delivering Global Trade, Seamlessly."
           </h2>
-          <p className="text-lg md:text-xl text-white/90 mb-8">
-            Pioneering Bulk Dry Cargo Shipments — From Mines to Markets.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10" style={{ marginTop: '11.25vw' }}>
             <button 
               className="btn btn-lg bg-white text-primary hover:bg-primary hover:text-white border-2 border-white font-semibold px-8 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
               onClick={() => scrollToSection('contact')}
@@ -51,6 +40,9 @@ const HeroSection = () => {
               Explore
             </button>
           </div>
+          <p className="text-lg md:text-xl font-bold text-white/90">
+            "Pioneering Bulk Dry Cargo Shipments From Mines to Markets."
+          </p>
         </div>
       </div>
     </section>

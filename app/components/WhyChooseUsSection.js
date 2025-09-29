@@ -63,14 +63,6 @@ const WhyChooseUsSection = () => {
             </div>
           </div>
         </div>
-
-        <div className="mt-8">
-          <div className="divider m-0 opacity-40"></div>
-          <p className="mt-3 text-[11px] leading-relaxed text-primary-content/80 text-center italic">
-            * Terms and conditions apply. KPIs are indicative and may vary based on port conditions, weather,
-            berth availability, customs clearance, and client readiness.
-          </p>
-        </div>
       </div>
     </section>
   );

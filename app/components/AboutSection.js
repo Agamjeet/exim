@@ -12,12 +12,12 @@ const AboutSection = () => {
             <h3 className="text-2xl font-semibold mb-6 text-primary">Who We Are</h3>
             <p className="text-lg leading-relaxed mb-4">
               BlueMarg Global LLP is a trusted partner in international trade and logistics. We focus on 
-              <span className="font-semibold"> dry‑bulk cargo</span>: minerals (iron ore, coal, baryte), agricultural products (grains, rice, sugar),
-              and fertilisers — delivering end‑to‑end movement from mines and farms to ports and plants.
+              <span className="font-semibold"> dry‑bulk cargo</span>: minerals, agricultural products,
+              and fertilisers delivering end‑to‑end movement from mines and farms to ports and plants.
             </p>
             <p className="text-lg leading-relaxed mb-6">
               Our team brings strong, diverse experience across <span className="font-semibold">global markets</span>, end‑to‑end sourcing,
-              logistics management and international compliance. Backed by <span className="font-semibold">14+ years of leadership experience in the Indian Navy and port operations</span>,
+              logistics management and international compliance. Backed by <span className="font-semibold">14+ years of leadership experience in the Navy and port operations</span>,
               we combine ethical sourcing, sustainable practices and tech‑enabled operations to keep your
               business agile, scalable and competitive.
             </p>
@@ -57,41 +57,41 @@ const AboutSection = () => {
           <div className="card bg-base-200 shadow-xl">
             <div className="card-body">
               <h3 className="card-title text-primary mb-4">Capabilities Snapshot</h3>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
-                <div className="stat bg-base-100 rounded-lg shadow p-3 text-center">
-                  <div className="stat-title text-xs sm:text-sm">Experience</div>
-                  <div className="stat-value text-primary text-xl sm:text-2xl lg:text-3xl">14+ yrs</div>
-                  <div className="stat-desc text-xs">Leadership & operations</div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div className="stat bg-base-100 rounded-lg shadow p-6 text-center">
+                  <div className="stat-title text-sm">Experience</div>
+                  <div className="stat-value text-primary text-2xl font-bold">14+ yrs</div>
+                  <div className="stat-desc text-sm">Leadership & operations</div>
                 </div>
-                <div className="stat bg-base-100 rounded-lg shadow p-3 text-center">
-                  <div className="stat-title text-xs sm:text-sm">Turnaround</div>
-                  <div className="stat-value text-primary text-xl sm:text-2xl lg:text-3xl">48 hrs</div>
-                  <div className="stat-desc text-xs">Discharge & evacuation</div>
+                <div className="stat bg-base-100 rounded-lg shadow p-6 text-center">
+                  <div className="stat-title text-sm">Turnaround</div>
+                  <div className="stat-value text-primary text-2xl font-bold">48 hrs</div>
+                  <div className="stat-desc text-sm">Discharge & evacuation</div>
                 </div>
-                <div className="stat bg-base-100 rounded-lg shadow p-3 text-center">
-                  <div className="stat-title text-xs sm:text-sm">Partners</div>
-                  <div className="stat-value text-primary text-xl sm:text-2xl lg:text-3xl">30+</div>
-                  <div className="stat-desc text-xs">Sourcing & logistics</div>
+                <div className="stat bg-base-100 rounded-lg shadow p-6 text-center">
+                  <div className="stat-title text-sm">Partners</div>
+                  <div className="stat-value text-primary text-2xl font-bold">30+</div>
+                  <div className="stat-desc text-sm">Sourcing & logistics</div>
                 </div>
-                <div className="stat bg-base-100 rounded-lg shadow p-3 text-center">
-                  <div className="stat-title text-xs sm:text-sm">Traceability</div>
-                  <div className="stat-value text-primary text-xl sm:text-2xl lg:text-3xl">100%</div>
-                  <div className="stat-desc text-xs">Docs & certifications</div>
+                <div className="stat bg-base-100 rounded-lg shadow p-6 text-center">
+                  <div className="stat-title text-sm">Traceability</div>
+                  <div className="stat-value text-primary text-2xl font-bold">100%</div>
+                  <div className="stat-desc text-sm">Docs & certifications</div>
                 </div>
               </div>
 
               <div className="mt-6 grid sm:grid-cols-2 gap-3">
                 <div className="alert alert-info">
-                  <span>Single‑window operations with measurable KPIs.</span>
+                  <span className="text-xs sm:text-sm md:text-base">Single‑window operations with measurable KPIs.</span>
                 </div>
                 <div className="alert alert-success">
-                  <span>Compliance‑ready documentation & third‑party inspection.</span>
+                  <span className="text-xs sm:text-sm md:text-base">Compliance‑ready documentation & third‑party inspection.</span>
                 </div>
                 <div className="alert alert-warning">
-                  <span>Multi‑modal connectivity: port, rail and last‑mile.</span>
+                  <span className="text-xs sm:text-sm md:text-base">Multi‑modal connectivity: port, rail and last‑mile.</span>
                 </div>
                 <div className="alert alert-primary">
-                  <span>Tech‑enabled tracking and proactive updates.</span>
+                  <span className="text-xs sm:text-sm md:text-base">Tech‑enabled tracking and proactive updates.</span>
                 </div>
               </div>
 

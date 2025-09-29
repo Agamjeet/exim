@@ -67,8 +67,8 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center gap-3 pb-6">
           <p className="text-sm">© 2025 BlueMarg Global. All rights reserved.</p>
           <div className="flex items-center gap-4">
-            <a className="btn btn-sm btn-outline">LinkedIn</a>
-            <a className="btn btn-sm btn-outline">X</a>
+            {/* <a className="btn btn-sm btn-outline">LinkedIn</a>
+            <a className="btn btn-sm btn-outline">X</a> */}
           </div>
         </div>
       </div>
