@@ -24,7 +24,7 @@ const HeroSection = () => {
             BlueMarg Global
           </h1>
           <h2 className="text-lg md:text-3xl font-semibold text-white" style={{ marginBottom: '15vw' }}>
-          "Delivering Global Trade, Seamlessly."
+          Delivering Global Trade, Seamlessly.
           </h2>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10" style={{ marginTop: '11.25vw' }}>
             <button 
@@ -41,7 +41,7 @@ const HeroSection = () => {
             </button>
           </div>
           <p className="text-lg md:text-xl font-bold text-white/90">
-            "Pioneering Bulk Dry Cargo Shipments From Mines to Markets."
+            Pioneering Bulk Dry Cargo Shipments From Mines to Markets.
           </p>
         </div>
       </div>
