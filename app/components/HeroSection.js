@@ -1,5 +1,7 @@
 'use client';
 
+import Image from 'next/image';
+
 const HeroSection = () => {
   // Smooth scroll function to navigate to different sections
   const scrollToSection = (sectionId) => {
@@ -11,10 +13,12 @@ const HeroSection = () => {
       {/* Background Image with Blue Gradient Overlay */}
       <div className="absolute inset-0">
         {/* Main background image - ship/port operations */}
-        <img
+        <Image
           src="/ship2.png"
           alt="Port Operations"
-          className="w-full h-full object-cover"
+          fill
+          className="object-cover"
+          priority
         />
         {/* Blue gradient overlay for better text readability and brand consistency */}
         <div className="absolute inset-0 bg-gradient-to-br from-sky-600/60 via-blue-500/50 to-blue-600/40"></div>
@@ -60,7 +64,7 @@ const HeroSection = () => {
           
           {/* Quote line underneath pioneering line */}
           <p className="text-lg md:text-xl font-bold text-white/90 mt-2" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.7)' }}>
-            "From Mines to Markets"
+            &ldquo;From Mines to Markets&rdquo;
           </p>
         </div>
       </div>

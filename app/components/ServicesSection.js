@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 const ServicesSection = () => {
   const services = [
     {
@@ -49,7 +51,12 @@ const ServicesSection = () => {
             >
               {/* Background image */}
               {service.image && (
-                <img src={service.image} alt={service.title} className="absolute inset-0 w-full h-full object-cover" />
+                <Image 
+                  src={service.image} 
+                  alt={service.title} 
+                  fill
+                  className="object-cover" 
+                />
               )}
               {/* Gradient overlays: subtle base + darker on hover */}
               <div className="pointer-events-none absolute inset-0 opacity-30 transition-opacity duration-300 bg-gradient-to-br from-sky-700/50 via-cyan-600/40 to-teal-500/30"></div>
