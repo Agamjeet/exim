@@ -47,7 +47,9 @@ const ServicesSection = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className={`relative group card bg-base-100 shadow-xl overflow-hidden transition-all duration-300 hover:shadow-2xl rounded-xl h-64 ${index === 4 ? 'md:col-span-2 lg:col-span-1' : ''}`}
+              className={`relative group card bg-base-100 shadow-xl overflow-hidden transition-all duration-300 hover:shadow-2xl rounded-xl h-64 ${
+                index === 3 ? 'md:col-start-1 md:col-end-3 lg:col-start-2 lg:col-end-3' : ''
+              }`}
             >
               {/* Background image */}
               {service.image && (
