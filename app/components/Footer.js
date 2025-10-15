@@ -57,7 +57,7 @@ const Footer = () => {
               <li>+91 97299 13232</li>
               <li>+91 95825 75277</li>
               
-              <li>connect@bluemarg.com</li>
+              <li>connect@bluemargglobal.com</li>
             </ul>
           </div>
         </div>
