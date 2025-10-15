@@ -10,6 +10,7 @@ const ContactSection = () => {
     message: ''
   });
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   useEffect(() => {
     if (typeof window === 'undefined') return;
@@ -30,19 +31,15 @@ const ContactSection = () => {
   };
 
   const handleSubmit = (e) => {
-    // FormSubmit handles the actual submission
-    // We can add any client-side validation or feedback here if needed
+    // Set loading state
+    setIsSubmitting(true);
     console.log('Form submitted:', formData);
     
-    // Reset form after submission (FormSubmit will redirect)
+    // The form will submit to FormSubmit.co and redirect
+    // If there's an error, reset loading state after timeout
     setTimeout(() => {
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        message: ''
-      });
-    }, 1000);
+      setIsSubmitting(false);
+    }, 10000); // Reset after 10 seconds if no redirect happens
   };
 
   return (
@@ -97,6 +94,8 @@ const ContactSection = () => {
                 <input type="hidden" name="_next" value="/?sent=1#contact" />
                 <input type="text" name="_honey" style={{ display: 'none' }} aria-hidden="true" tabIndex={-1} />
                 <input type="hidden" name="_autoresponse" value="Thank you for contacting BlueMarg Global. We will get back to you shortly." />
+                <input type="hidden" name="_cc" value="connect@bluemargglobal.com" />
+                <input type="hidden" name="_replyto" value="" />
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div className="form-control">
                     <label className="label">
@@ -157,8 +156,23 @@ const ContactSection = () => {
                 </div>
                 
                 <div className="form-control mt-6">
-                  <button type="submit" className="btn btn-lg bg-primary text-white hover:bg-white hover:text-primary border-2 border-primary font-semibold px-8 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-                    Send Message
+                  <button 
+                    type="submit" 
+                    disabled={isSubmitting}
+                    className={`btn btn-lg font-semibold px-8 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 ${
+                      isSubmitting 
+                        ? 'bg-gray-400 text-white cursor-not-allowed' 
+                        : 'bg-primary text-white hover:bg-white hover:text-primary border-2 border-primary'
+                    }`}
+                  >
+                    {isSubmitting ? (
+                      <>
+                        <span className="loading loading-spinner loading-sm mr-2"></span>
+                        Sending...
+                      </>
+                    ) : (
+                      'Send Message'
+                    )}
                   </button>
                 </div>
               </form>
