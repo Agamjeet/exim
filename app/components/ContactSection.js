@@ -30,7 +30,19 @@ const ContactSection = () => {
   };
 
   const handleSubmit = (e) => {
-    // Handled by FormSubmit; keep for consistency if needed
+    // FormSubmit handles the actual submission
+    // We can add any client-side validation or feedback here if needed
+    console.log('Form submitted:', formData);
+    
+    // Reset form after submission (FormSubmit will redirect)
+    setTimeout(() => {
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        message: ''
+      });
+    }, 1000);
   };
 
   return (
@@ -61,7 +73,7 @@ const ContactSection = () => {
 
                 <div className="pt-2 flex gap-3">
                   <a href="tel:+919729913232" className="btn btn-lg bg-transparent text-primary hover:bg-primary hover:text-white border-2 border-primary font-semibold px-8 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">Call Now</a>
-                  <a href="mailto:connect@bluemarg.com" className="btn btn-lg bg-primary text-white hover:bg-white hover:text-primary border-2 border-primary font-semibold px-8 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">Email Us</a>
+                  <a href="mailto:connect@bluemargglobal.com" className="btn btn-lg bg-primary text-white hover:bg-white hover:text-primary border-2 border-primary font-semibold px-8 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">Email Us</a>
                 </div>
               </div>
             </div>

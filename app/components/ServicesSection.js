@@ -6,7 +6,7 @@ const ServicesSection = () => {
       icon: "🚢",
       title: "Stevedoring",
       description: "Handling bulk iron ore & cargo discharge with optimized manpower & equipment, reducing vessel idle time.",
-      image: "bend.png"
+      image: "/bend.png"
     },
     {
       icon: "⚓",
@@ -70,11 +70,6 @@ const ServicesSection = () => {
                 <div className="opacity-0 max-h-0 group-hover:opacity-100 group-hover:max-h-40 transition-all duration-300 overflow-hidden">
                   <div className="text-4xl my-2">{service.icon}</div>
                   <p className="text-sm text-white/90 transition-colors duration-300">{service.description}</p>
-                  <div className="mt-3">
-                    <p className="text-xs text-white/80">
-                      Efficient coordination with measurable KPIs. Learn more →
-                    </p>
-                  </div>
                 </div>
               </div>
             </div>
