@@ -55,7 +55,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li>New Delhi, India</li>
               <li>+91 97299 13232</li>
-              <li></li>
+              {/* <li></li> */}
               
               <li>connect@bluemargglobal.com</li>
             </ul>
