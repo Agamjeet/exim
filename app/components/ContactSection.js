@@ -64,7 +64,7 @@ const ContactSection = () => {
 
                 <div className="space-y-2">
                   <p className="text-sm">New Delhi, India</p>
-                  <p className="text-sm"><span className="font-semibold">Phone:</span> <a className="link link-hover" href="tel:+919729913232">+91 97299 13232</a> · <a className="link link-hover" href="tel:+919582575277">+91 95825 75277</a></p>
+                  <p className="text-sm"><span className="font-semibold">Phone:</span> <a className="link link-hover" href="tel:+919729913232">+91 97299 13232</a></p>
                   <p className="text-sm"><span className="font-semibold">Email:</span> <a className="link link-hover" href="mailto:connect@bluemargglobal.com">connect@bluemargglobal.com</a></p>
                 </div>
 
